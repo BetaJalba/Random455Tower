@@ -1,0 +1,14 @@
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.AssemblyInfoInputs.cache
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.AssemblyInfo.cs
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.csproj.CoreCompileInputs.cache
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\bin\Debug\net8.0\HumalaKumalala.exe
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\bin\Debug\net8.0\HumalaKumalala.deps.json
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\bin\Debug\net8.0\HumalaKumalala.runtimeconfig.json
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\bin\Debug\net8.0\HumalaKumalala.dll
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\bin\Debug\net8.0\HumalaKumalala.pdb
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.dll
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\refint\HumalaKumalala.dll
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.pdb
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.genruntimeconfig.cache
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\ref\HumalaKumalala.dll
