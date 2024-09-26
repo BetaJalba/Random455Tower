@@ -4,9 +4,6 @@ namespace HumalaKumalala
 {
     public class CProgram
     {
-        const int A = 0;
-        const int B = 1;
-        const int C = 2;
         static int[] arreiPazzurdo;
         static bool onlyOnce = false;
         static int p = 1;
@@ -197,14 +194,7 @@ namespace HumalaKumalala
                     lettera2 = 'C';
                     break;
             }
-            try 
-            {
-                Console.WriteLine($"Mossa accuratamente calcolata: {lettera1} - {lettera2}");
-            }
-            catch
-            { 
-                Console.WriteLine("Overflow!"); 
-            }
+            Console.WriteLine($"Mossa accuratamente calcolata: {lettera1} - {lettera2}");
         }
     }
 }
