@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HumalaKumalala")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e09ec5c5d8d7e2aae4d505c8992c0cfd0ff9d774")]
 [assembly: System.Reflection.AssemblyProductAttribute("HumalaKumalala")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HumalaKumalala")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,3 +12,4 @@ C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\refin
 C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.pdb
 C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.genruntimeconfig.cache
 C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\ref\HumalaKumalala.dll
+C:\Users\crist\source\repos\HumalaKumalala\HumalaKumalala\obj\Debug\net8.0\HumalaKumalala.sourcelink.json

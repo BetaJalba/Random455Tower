@@ -9,7 +9,7 @@ namespace HumalaKumalala
         const int C = 2;
         static int[] arreiPazzurdo;
         static bool onlyOnce = false;
-        static int isPari = -1;
+        static int p = 1;
 
         static void Main()
         {
@@ -17,27 +17,22 @@ namespace HumalaKumalala
             // 1    2    3    4     5     6
             arreiPazzurdo = new int[3];
             Console.WriteLine("Inizio");
-            risolvi(5, 1);
+            risolvi(10);
 
             /*
              [1] [ ] [ ]
              [2] [ ] [ ]
-             [3] [ ] [ ]
+             [4] [ ] [ ]
              */
         }
 
-        static void risolvi(int n, int p)
+        static void risolvi(int n)
         {
             if (!onlyOnce)
             {
                 arreiPazzurdo[0] = (int)Math.Pow(2, n) - 1;
                 onlyOnce = true;
             }
-
-            if (isPari == -1) 
-            {
-                isPari = ((int)Math.Truncate(Math.Log2(arreiPazzurdo[0])) + 1) % 2; //0 se pari 1 se dispari
-            } 
 
             //parte iterativa
 
@@ -49,7 +44,7 @@ namespace HumalaKumalala
                     posDiscoPiccolo = i;
             }
             
-            if (isPari == 0) 
+            if (n % 2 == 0) 
             {
                 switch (p) 
                 {
@@ -82,7 +77,8 @@ namespace HumalaKumalala
             if (p == 2)
                 p = 0;
 
-            risolvi(n, p + 1);
+            p++;
+            risolvi(n);
         }
 
         static void calcolaMossa(int p, int f) 
@@ -98,6 +94,7 @@ namespace HumalaKumalala
                 p = 2;
 
             int vPezzo = arreiPazzurdo[p];
+            int vPezzof = arreiPazzurdo[f];
             int esponente;
 
             if (vPezzo != 0) //se la partenza è colonna vuota la mossa inversa è garantita
@@ -113,7 +110,21 @@ namespace HumalaKumalala
                     esponente--;
                 }
 
-                if ((vPezzo < arreiPazzurdo[f] || arreiPazzurdo[f] == 0))
+                if (vPezzof != 0) 
+                {
+                    esponente = (int)Math.Truncate(Math.Log2(arreiPazzurdo[f]));
+
+                    while ((int)Math.Pow(2, esponente) != vPezzof) //calcolo del valore del secondo pezzo
+                    {
+                        if ((int)Math.Pow(2, esponente) <= vPezzof)
+                        {
+                            vPezzof -= (int)Math.Pow(2, esponente);
+                        }
+                        esponente--;
+                    }
+                }
+
+                if ((vPezzo < vPezzof || vPezzof == 0))
                 {
                     arreiPazzurdo[p] -= vPezzo;
                     arreiPazzurdo[f] += vPezzo;
@@ -186,8 +197,14 @@ namespace HumalaKumalala
                     lettera2 = 'C';
                     break;
             }
-
-            Console.WriteLine($"Mossa accuratamente calcolata: {lettera1} - {lettera2}");
+            try 
+            {
+                Console.WriteLine($"Mossa accuratamente calcolata: {lettera1} - {lettera2}");
+            }
+            catch
+            { 
+                Console.WriteLine("Overflow!"); 
+            }
         }
     }
 }
